@@ -1,6 +1,6 @@
 from moneywagon import (
     get_unspent_outputs, CurrentPrice, get_optimal_fee, PushTx,
-    get_onchain_exchange_rates
+    get_onchain_exchange_rates, get_current_price
 )
 from moneywagon.core import get_optimal_services, get_magic_bytes
 from bitcoin import mktx, sign, pubtoaddr, privtopub
