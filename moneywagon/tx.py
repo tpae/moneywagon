@@ -36,7 +36,7 @@ class Transaction(object):
         if not unit or unit == 'satoshi':
             return value
         if unit == 'bitcoin' or unit == 'btc':
-            return value * 1e8
+            return int(value * 1e8)
 
         # assume fiat currency that we can convert
         convert = get_current_price(self.crypto, unit)
